@@ -1,0 +1,170 @@
+$lightBg: "https://i.ibb.co/t2ghNcR/light-wood.jpg";
+$darkBg: "https://i.ibb.co/HK4jNK4/dark-wood.jpg";
+$textileBg: "./assets/pulucBoardBgHq.jpeg";
+$dur: 0.5s;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.darkCornersOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.5);
+  background: radial-gradient(transparent 10%, black 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulucBoard {
+  width: 350px;
+  height: 530px;
+  padding: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.fieldBackgroundImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.fieldContainer {
+  position: relative;
+}
+
+.startingPoint {
+  width: 300px;
+  min-height: 40px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pawnHolder {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: {
+    image: url($lightBg);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 45deg;
+}
+
+.pawn {
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackPawn {
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2E3134;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whitePawn {
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ebddcc;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commandUI {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  padding: 20px;
+  //background-color: violet;
+  background-color: rgba(255,255,255, 0.5);
+}
+
+.commandsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //background-color: green;
+}
+
+.diceRollCommand {
+  display: flex;
+  margin-right: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.infoEndCommand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

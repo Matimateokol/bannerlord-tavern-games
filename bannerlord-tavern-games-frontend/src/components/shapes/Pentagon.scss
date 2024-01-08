@@ -1,0 +1,21 @@
+$lightBg: "https://i.ibb.co/t2ghNcR/light-wood.jpg";
+$darkBg: "https://i.ibb.co/HK4jNK4/dark-wood.jpg";
+
+.container {
+	margin: 20px;
+	//margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+	gap: 10px 20px;
+	position: relative;
+}
+
+.pentagon-1 {
+	position: relative;
+	width: 315px;
+	height: 300px;
+	background: {
+		//image: url($lightBg);
+	}
+	clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
