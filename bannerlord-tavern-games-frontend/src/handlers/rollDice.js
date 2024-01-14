@@ -1,3 +1,5 @@
-export default function rollDice() {
-    return Math.random() * 5;
+function rollDice(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+module.exports = rollDice;
