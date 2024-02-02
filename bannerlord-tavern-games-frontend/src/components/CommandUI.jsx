@@ -1,11 +1,14 @@
-export default function CommandUI() {
+import { useState } from 'react'; 
+
+export default function CommandUI({ diceRoll, onDiceRoll }) {
+
     return (
         <div className="commandUI" >
             <p>Your Turn</p>
             <div className="commandsContainer">
                 <div className="diceRollCommand">
-                    <p>-</p>
-                    <button>Roll Dice</button>
+                    <p>{diceRoll}</p>
+                    <button onClick={onDiceRoll}>Roll Dice</button>
                 </div>
                 <div className="infoEndCommand">
                     <button style={{ width: '100%'}}>How to Play</button>
