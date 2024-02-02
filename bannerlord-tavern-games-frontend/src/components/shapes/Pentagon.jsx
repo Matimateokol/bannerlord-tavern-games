@@ -12,8 +12,6 @@ export default function Pentagon({
   zIndex,
   transform
 }) {
-  const url = 'url(' + img + ')';
-
   return (
     <div className="container">
       <div
