@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if PawnHolder contains a Pawn with given props: 
+  <div className="pawnHolder">
+    <button className='blackPawn'>3</button>
+  </div>
+   1`] = `undefined`;
+
+exports[`Test if PawnHolder matches snapshot with given prop values: 
+    <div className="pawnHolder">
+      <button className='blackPawn'>3</button>
+    </div>
+   1`] = `undefined`;
+
+exports[`Test if PawnHolder matches snapshot with given prop values: 
+  <div className="pawnHolder">
+    <button className='blackPawn'>3</button>
+  </div>
+   1`] = `undefined`;
+
+exports[`Test if PawnHolder matches snapshot with given props: 
+  <div className="pawnHolder">
+    <button className='blackPawn'>3</button>
+  </div>
+   1`] = `undefined`;

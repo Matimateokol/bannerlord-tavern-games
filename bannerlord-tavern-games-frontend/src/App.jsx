@@ -4,14 +4,13 @@ import Table from './components/Table';
 import Pentagon from './components/shapes/Pentagon';
 
 function App() {
-
   return (
     <>
       <Table>
         <PulucGame />
       </Table>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

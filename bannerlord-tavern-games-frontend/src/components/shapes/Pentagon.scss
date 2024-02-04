@@ -2,18 +2,18 @@ $lightBg: "https://i.ibb.co/t2ghNcR/light-wood.jpg";
 $darkBg: "https://i.ibb.co/HK4jNK4/dark-wood.jpg";
 
 .container {
-	margin: 20px;
+	margin: 1vw;
 	//margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
-	gap: 10px 20px;
+	gap: 1vw 1vw;
 	position: relative;
 }
 
 .pentagon-1 {
 	position: relative;
-	width: 315px;
-	height: 300px;
+	width: 1vw;
+	height: 1vw;
 	background: {
 		//image: url($lightBg);
 	}
