@@ -1,9 +1,15 @@
 import Pawn from './Pawn';
-export default function PawnHolder({ pawnSize, id, pawnStyleName }) {
+import PropTypes from 'prop-types';
+
+export default function PawnHolder({ id, pawnStyleName }) {
   return (
     <div className="pawnHolder">
-      {/* <button>{id}</button> */}
       <Pawn pawnStyleName={pawnStyleName} id={id} />
     </div>
   );
 }
+
+PawnHolder.propTypes = {
+  id: PropTypes.number,
+  pawnStyleName: PropTypes.string
+};
