@@ -17,6 +17,9 @@ These games are:
 - Seela (Aserai)
 - Konane (Sturgia)
 
+## Demo
+[Puluc](https://matimateokol.github.io/bannerlord-tavern-games/)
+
 ## Features
 
 MORE INFO SOON!!!
