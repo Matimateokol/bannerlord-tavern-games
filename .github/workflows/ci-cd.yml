@@ -2,7 +2,7 @@ name: Frontend CI/CD
 on: push
 defaults:
       run:
-        working-directory: ./bannerlord-tavern-games/bannerlord-tavern-games-frontend
+        working-directory: ./bannerlord-tavern-games-frontend
 jobs:
   # Build Job
   build:
