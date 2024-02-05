@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./bannerlord-tavern-games-frontend/dist
  # Deploy Job
   deploy:
     # Add a dependency to the build job
@@ -34,9 +34,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./bannerlord-tavern-games-frontend/dist
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.CI_CD_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./bannerlord-tavern-games-frontend/dist
