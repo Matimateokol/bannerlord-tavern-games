@@ -1,6 +1,7 @@
 {
   "name": "bannerlord-tavern-games-frontend",
   "private": true,
+  "homepage": "https://matimateokol.github.io/bannerlord-tavern-games/",
   "jest": {
     "verbose": true,
     "testEnvironment": "jsdom",
