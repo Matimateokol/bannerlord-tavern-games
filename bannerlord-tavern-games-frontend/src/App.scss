@@ -63,6 +63,8 @@ $dur: 0.5s;
   height: 3vw;
   position: relative;
   font-size: 1vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .startingPoint {
