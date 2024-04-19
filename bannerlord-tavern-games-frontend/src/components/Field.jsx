@@ -1,5 +1,6 @@
 import lightLeatherBg from '../assets/lightLeather.png';
 import darkLeatherBg from '../assets/darkLeather.png';
+import { any, func, number, string } from 'prop-types';
 
 export default function Field({ children, onFieldClick, sizeX, sizeY, id }) {
   const fieldColor = parseInt(id) % 2 === 0 ? 'white' : 'gray';
@@ -38,3 +39,11 @@ export default function Field({ children, onFieldClick, sizeX, sizeY, id }) {
     </div>
   );
 }
+
+Field.propTypes = {
+  children: any,
+  onFieldClick: func,
+  sizeX: string,
+  sizeY: string,
+  id: number
+};

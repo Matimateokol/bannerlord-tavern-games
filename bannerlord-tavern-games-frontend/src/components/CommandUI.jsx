@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { func, string } from 'prop-types';
 
 export default function CommandUI({ diceRoll, onDiceRoll }) {
   return (
@@ -17,3 +17,8 @@ export default function CommandUI({ diceRoll, onDiceRoll }) {
     </div>
   );
 }
+
+CommandUI.propTypes = {
+  diceRoll: string,
+  onDiceRoll: func
+};
